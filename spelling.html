@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 style="color: red">
+
+    Spelling Test</h1>
+<ol id="words">
+
+</ol>
+<input type="text" id="word">
+<button type="button" id="button">good job!</button>
+<script type="text/javascript">
+  var btn = document.getElementById("button")
+  var word= document.getElementById("word")
+  var words= document.getElementById("words")
+  btn.addEventListener("click",function(){
+    console.log(word.value)
+    words.innerHTML = words.innerHTML+ "<LI>" + word.value + "</li>"
+word.value = ""
+  })
+</script>
+  </body>
+</html>
